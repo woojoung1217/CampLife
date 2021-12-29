@@ -1,0 +1,117 @@
+<!-- 로그인  -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampLife</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <link rel="stylesheet" href="../CSS/signin.css">
+  <link rel="icon" href="../images/logolast.png" />
+ <!--Google Fonts - 나눔고딕-->
+ <link rel="preconnect" href="https://fonts.gstatic.com" />
+ <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+ <!--Google Material Icons-->
+ <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+ <!--Swiper-->
+ <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+ <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+ <!--ScrollMagic-->
+ <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+ <!--Lodash-->
+ <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+ <script defer src="../js/main.js"></script>
+
+
+  <!--파비콘-->
+  <!--<link rel="shortcut icon" href="favicon.ico" />-->
+  <link rel="icon" href="../images/logo2.png" />
+  <!--브라우저 스타일 초기화-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <!--Google Fonts - 나눔고딕-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+  <!--Google Material Icons-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <!--GSAP & ScrollToPlugin-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+  <!--ScrollMagic-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <!--Lodash-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+
+
+  <head>
+    <body>
+<!-- 
+      <div class="mainsection">
+        <nav class="nav-bar">
+          <div class="inputlogo">
+            <a href="../HTML/main.html"><img src="../images/logo2.png" class="logosize"></a>
+          </div>
+          <div class="header-bar">
+            <ul class="listitems">
+              <li><a href="javascript:void(0)">지역별</a></li>
+              <li><a href="javascript:void(0)">테마투어</a></li>
+              <li><a href="javascript:void(0)">리뷰</a></li>
+              <li><a href="javascript:void(0)">로그인/회원가입</a></li>
+              <li><a href="javascript:void(0)">보기</a></li>
+            </ul>
+          </div>
+        </nav> -->
+
+         <div class="backimg">
+          <nav class="nav-bar">
+            <div class="inputlogo">
+              <a href="../HTML/main.html"><img src="../images/logolast.png" class="logosize"></a>
+            </div>
+            <nav class="header-bar">
+              <ul class="listitems">
+                <li><a href="javascript:void(0)">지역별</a></li>
+                <li><a href="javascript:void(0)">테마투어</a></li>
+                <li><a href="javascript:void(0)">리뷰</a></li>
+                <li><a href="javascript:void(0)">로그인/회원가입</a></li>
+                <li><a href="javascript:void(0)">보기</a></li>
+              </ul>
+            </nav>
+            </div>
+      <section class="signin">
+        <h1>로그인</h1>
+        <div class="signin__card">
+            <h2>
+                <strong>캠핑 여행지 바로 CampLife 에서</strong>
+            </h2>
+            <form>
+                <input type="text" placeholder="아이디 또는 이메일" />
+                <input type="password"placeholder="비밀번호" />
+                <input type="submit" value="로그인" />
+                <p>
+                    *비밀번호를 타 사이트와 같이 사용할 경우 도용 위험이 있으니,<br/>
+                    정기적으로 비밀번호를 변경하세요!
+                </p>
+            </form>
+            <div class="actions">
+                <a href="../CSS/newaccount.css">회원가입</a>
+                <a href="../HTML/main.html">홈으로</a>
+                <a href="javascript:void(0)">아이디/비밀번호 찾기</a>
+            </div>
+        </div>
+      </section>
+        </div>
+
+
+     
+     
+
+    </body>
+  </head>

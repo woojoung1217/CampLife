@@ -1,0 +1,224 @@
+<!-- 메인페이지 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampLife</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <link rel="stylesheet" href="../CSS/main.css">
+  <link rel="icon" href="../images/logolast.png" />
+ <!--Google Fonts - 나눔고딕-->
+ <link rel="preconnect" href="https://fonts.gstatic.com" />
+ <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+ <!--Google Material Icons-->
+ <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+ <!--Swiper-->
+ <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+ <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+ <!--ScrollMagic-->
+ <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+ <!--Lodash-->
+ <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+ <script defer src="../js/main.js"></script>
+
+
+  <!--파비콘-->
+  <!--<link rel="shortcut icon" href="favicon.ico" />-->
+  <link rel="icon" href="../images/favicon.png" />
+  <!--브라우저 스타일 초기화-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <!--Google Fonts - 나눔고딕-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+  <!--Google Material Icons-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" type="text/css" href="http://api.typolink.co.kr/css?family=RixGo+L:400|RixGo+M:400|RixGo+B:400|RixGo+EB:400" />
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <!--GSAP & ScrollToPlugin-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+  <!--ScrollMagic-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <!--Lodash-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+<!-- mainsection -->
+      <div class="mainsection">
+          <nav class="nav-bar">
+            <div class="inputlogo">
+              <a href="../HTML/main.html"><img src="../images/logolast.png" class="logosize"></a>
+            </div>
+            <div class="header-bar">
+              <ul class="listitems">
+                <li><a href="javascript:void(0)">지역별</a></li>
+                <li><a href="javascript:void(0)">테마투어</a></li>
+                <li><a href="javascript:void(0)">리뷰</a></li>
+                <li><a href="../HTML/signin.html">로그인/회원가입</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="onbording">
+            <div class="textonbord">
+            <h1>캠핑과 나를 연결하다</h1>
+           
+          </div>
+ 
+            
+          <div class="search_bar">
+            <input type="text"id="search"placeholder="지역별, 테마로 검색">
+            <span class="material-icons">search</span>
+          </div>
+          </div>
+      </div>
+
+
+<!--go to mbti section-->
+      <div class="goto_mbti">
+        <div class="positionset">
+          <div class="textposition">
+          <h1>조금 더 특별한 여행이 시작되는 공간</h1>
+          <br>
+          <h2>당신만의 취향을 찾고, 새로운 여행을 맛볼 수 있는 곳</h2>
+          <h3>당신의 캠핑스타일을 찾아보세요</h3>
+         </div>
+
+         <div class="movepage-mbti">
+           <!-- <button id="btn-mbti"><a href="#">캠핑 유형 검사하기</a></button> -->
+           
+           <a href="#" class="goto_mbtilink">캠핑유형 검사하기</a>
+          
+         </div>
+        </div>
+      </div>
+
+
+<!-- slider -->
+
+      <div class="slide_background">
+
+        <div class="slide_section1">
+          <div class="slide_contents1">
+              <h1>캠프라이프에서</h1>
+              <h1>추천하는 특별한 장소</h1>
+              <h1>지금바로 확인하기!</h1>
+              <h3>이번 달 인기장소를</h3>
+              <h3>추천 해드립니다.</h3>
+          </div>    
+        </div>
+
+        <div class="slide_section2">
+          <div class="slide_contents2">
+            <img src="" alt="">
+         </div> 
+        </div>
+        <div class="slide_section3">
+          <div class="slide_contents3">
+            <img src="" alt="">
+         </div> 
+        </div>
+
+      </div>
+
+        <div class="keywords_section">
+              <div class="text_section">
+                  <h1>캠프라이프 추천 키워드</h1>
+                  <h4>캠프라이프가 선정한 캠핑 키워드로 여행지를 선정 해보세요</h4>
+                  <div class="morepage">
+                  <a href="#">더보기</a>
+                  <span class="material-icons">arrow_forward</span>
+                  
+                  </div>
+              </div>
+              <div class="keywords_photo_section">
+                    <div class="photo1">
+                    
+                    </div>
+                    <div class="photo2">
+                    
+                    </div>
+                    <div class="photo3">
+                    
+                    </div>
+                    <div class="photo4">
+                    
+                    </div>
+
+                  </div>
+        
+        </div>
+
+        <div class="review_section">
+          <div class="review_info">
+            <h1>캠프 라이퍼들의 생생한 리뷰</h1>
+            <h2>캠프라이프를 통한 사용자 리뷰 지금 바로 확인하세요!</h2>
+            <div class="morepage">
+              <a href="#">더보기</a>
+            <span class="material-icons">arrow_forward</span>
+            </div>
+          </div>
+
+          <div class="review_post">
+            <div class="post1">
+              
+            </div>
+            <div class="post2">
+
+            </div>
+            <div class="post3">
+
+            </div>
+            
+          </div>
+        </div>
+    
+
+      <!-- foooter -->
+      <footer>
+        <div class="inner">
+          <ul class="menu">
+            <li><a href="https://github.com/woojoung1217" class="green">개발자 사이트</a></li>
+            <li><a href="javascript:void(0)">이메일</a></li>
+            <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
+            <li><a href="javascript:void(0)">캠핑정보 제공약관</a></li>
+            <li><a href="javascript:void(0)">저작권</a></li>
+            <li><a href="javascript:void(0)">개발자 : 윤우중</a></li>
+          </ul>
+          <div class="btn-group">
+            <a href="javascript:void(0)" class="btn btn--white">코드보기</a>
+            <a href="javascript:void(0)" class="btn btn--white">개발과정</a>
+            <a href="javascript:void(0)" class="btn btn--white">사용된 언어 / 툴</a>
+          </div>
+    
+          <div class="info">
+            <span>TEL : 010-4163-7540 / E-mail : ywj981217@naver.com</span>
+            <span>소속 : 순천향대학교 컴퓨터소프트웨어공학과</span>
+            <span>저작권 소유자 : 윤우중</span>
+          </div>
+          <p class="copyright">
+         
+          </p>
+          <img src="" alt="" class="logo">
+          
+    
+        </div>
+      </footer>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!-- 회원가입  -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampLife</title>
+  <link rel="icon" href="../images/logo2.png" />
+ <!--Google Fonts - 나눔고딕-->
+ <link rel="preconnect" href="https://fonts.gstatic.com" />
+ <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+ <!--Google Material Icons-->
+ <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q==" crossorigin="anonymous"></script>
+ <!--Swiper-->
+ <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+ <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+ <!--ScrollMagic-->
+ <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+ <!--Lodash-->
+ <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+ <script defer src="../js/main.js"></script>
+ <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+ <link rel="stylesheet" href="../CSS/newaccount.css">
+
+ 
+<head>
+    <body>
+        
+        <div class="back-btn">
+
+           <a href="../HTML/main.html"> <span class="material-icons">arrow_back</span></a>
+        </div>
+
+        <form action="doJoin" method="POST" class="joinForm" onsubmit="DoJoinForm__submit(this); return false;">
+                                                                                               
+            <h2>회원가입</h2>
+            <div class="textForm">
+              <input name="loginId" type="text" class="id" placeholder="아이디">
+              </input>
+            </div>
+            <div class="textForm">
+              <input name="loginPw" type="password" class="pw" placeholder="비밀번호">
+            </div>
+             <div class="textForm">
+              <input name="loginPwConfirm" type="password" class="pw" placeholder="비밀번호 확인">
+            </div>
+            <div class="textForm">
+              <input name="name" type="password" class="name" placeholder="이름">
+            </div>
+             <div class="textForm">
+              <input name="email" type="text" class="email" placeholder="이메일">
+            </div>
+            <div class="textForm">
+              <input name="nickname" type="text" class="nickname" placeholder="닉네임">
+            </div>
+            <div class="textForm">
+              <input name="cellphoneNo" type="number" class="cellphoneNo" placeholder="전화번호">
+            </div>
+            <input type="submit" class="btn" value="J O I N"/>
+          </form>
+
+
+
+
+
+    </body>
+</head>
