@@ -180,12 +180,20 @@ body{
   align-items: center; 
 }
 
-
-
+.back_mbti{
+  position: relative;
+  background-position: center;
+  background-size: contain;
+  top:60px;
+  left: 500px;
+  width: 584px;
+  height: 260px;
+  background-image: url(../images/mbti_background.png);
+}
 .goto_mbti .positionset{
   width: 100%;
-  height: 390px;
-  background-image: url(../images/);
+  height: 300px;
+  margin-bottom: 151px;
 }
 .goto_mbti .positionset .textposition {
   width: 100%;
@@ -297,7 +305,6 @@ body{
 .slide_background .slide_section2 .slide_contents2 {
   width: 614.95px;
   height: 431.57px;
-  background-color: black;
 }
 
 
@@ -307,10 +314,20 @@ body{
   justify-content: center;
   align-items: center ;
 }
-.slide_background .slide_section3 .slide_contents3 {
+.slide_background .slide_section3 .slide_contents4 {
   width: 614.95px;
   height: 431.57px;
-  background-color: black;
+  
+}
+.slide_background .slide_section4 {
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+}
+.slide_background .slide_section4 .slide_contents4 {
+  width: 614.95px;
+  height: 431.57px;
+  display: none;
 }
 
 .keywords_section{
@@ -363,35 +380,38 @@ body{
 .keywords_photo_section {
   width: 90%;
   height: 600px;
-  background-color: aliceblue;
   position: relative;
   top:60px;
   left: 80px;
+  margin-right: 150px;
 }
 .keywords_photo_section .photo1 {
   width: 340px;
   height: 520px;
-  background-color: aquamarine;
   position: absolute;
   top:30px;
   left: 60px;
+  background-image: url(../images/keyword_1.png);
 }
 
 .keywords_photo_section .photo2{
   position: absolute;
-  width: 780px;
+  width: 770px;
   height: 250px;
   background-color: beige;
   left: 450px;
   top:30px;
+  background-image: url(../images/keyword_2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .keywords_photo_section .photo3 {
   width: 350px;
   height: 250px;
-  background-color: brown;
   position: absolute;
   left: 880px;
   top:300px;
+  background-image: url(../images/keyword_3.png);
 }
 .keywords_photo_section .photo4 {
   width: 350px;
@@ -400,6 +420,7 @@ body{
   position: absolute;
   left: 452px;
   top:300px;
+  background-image: url(../images/keyword_4.png);
 }
 
 .review_section {
@@ -459,6 +480,9 @@ body{
   height: 400px;
   background-color: #fff;
   margin-right: 20px;
+  background-image: url(../images/review1.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .review_section .review_post .post2 {
