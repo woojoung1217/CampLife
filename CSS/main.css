@@ -412,15 +412,18 @@ body{
   left: 880px;
   top:300px;
   background-image: url(../images/keyword_3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .keywords_photo_section .photo4 {
   width: 350px;
   height: 250px;
-  background-color:royalblue;
   position: absolute;
   left: 452px;
   top:300px;
   background-image: url(../images/keyword_4.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .review_section {
@@ -490,12 +493,14 @@ body{
   height: 400px;
   background-color: #fff;
   margin-right: 20px;
+  background-image: url(../images/review_2.jpeg);
 }
 
 .review_section .review_post .post3 {
   width: 400px;
   height: 400px;
   background-color: #fff;
+  background-image: url(../images/review_3.jpeg);
 }
 
 
@@ -712,16 +717,16 @@ body{
 /* footer */
 
 .footersetter{
-  margin-top: 600px;
 }
 footer{
-  background-color: #272727;
-  border-top: 1px solid #333;
 
 }
 
 footer .inner{
-  padding: 40px 0 60px 0;
+  width: 100%;
+  height: 400px;
+  background-image: url(../images/footer_background.jpeg);
+  background-size: cover;
 }
 
 footer .menu{
@@ -754,7 +759,6 @@ footer .menu li a{
 }
 
 footer .menu li a.green{
-  color: #669900;
 }
 
 footer .btn-group {
@@ -793,5 +797,11 @@ footer .copyright {
 }
 
 footer .logo{
-  margin: 30px auto 0;
+  
+}
+
+footer .logoset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
