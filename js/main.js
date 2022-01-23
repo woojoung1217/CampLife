@@ -34,6 +34,9 @@ new Swiper('.promotion .swiper-container', {
 //   }
 // })
 
+  const ele = document.queryCommandIndeterm("121");
+  const ele2 = document.querySelectorAll('.promotion');
+
 
 /**
  * Promotion 슬라이드 토글 기능
@@ -54,5 +57,53 @@ promotionToggleBtn.addEventListener('click', function () {
   // 요소가 보여야 하면,
   } else {
     promotionEl.classList.remove('hide')
+  }
+})
+
+
+
+promotionToggleBtn.addEventListener('click',function(){
+  isHidePromotion = !isHidePromotion
+
+  if(isHidePromotion) {
+    promotionEl.classList.add('hide')
+  }
+  else{
+    promotionEl.classList.remove('hide')
+
+  }
+})
+
+
+const promotionEl = document.querySelector('.promotion')
+// 슬라이드 영역를 토글하는 버튼 검색!
+const promotionToggleBtn = document.querySelector('.toggle-promotion')
+// 슬라이드 영역 숨김 여부 기본값!
+let isHidePromotion = false
+// 토글 버튼을 클릭하면,
+promotionToggleBtn.addEventListener('click', function () {
+  // 슬라이드 영역 숨김 여부를 반댓값으로 할당!
+  isHidePromotion = !isHidePromotion
+  // 요소를 숨겨야 하면,
+  if (isHidePromotion) {
+    promotionEl.classList.add('hide')
+  // 요소가 보여야 하면,
+  } else {
+    promotionEl.classList.remove('hide')
+  }
+  // 요소가 보일 때 반응형 = reaction = 1/2
+})
+
+
+
+promotionToggleBtn.addEventListener('click',function(){
+  isHidePromotion = !isHidePromotion
+
+  if(isHidePromotion) {
+    promotionEl.classList.add('hide')
+  }
+  else{
+    promotionEl.classList.remove('hide')
+    
   }
 })
