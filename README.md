@@ -1,2 +1,2 @@
-# CampLife 1234=22
+# CampLife 
 
